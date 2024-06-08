@@ -11,7 +11,7 @@ const findSolution = () => {
     } else if (discriminant == 0) {
         x = -b / (2 * a)
 
-        return result + `só tem uma solução: x = ${x}`
+        return result + ` só tem uma solução: x = ${x}`
     } else {
         return result + " não apresenta raízes reais."
     }
