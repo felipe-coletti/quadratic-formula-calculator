@@ -1,7 +1,7 @@
 const findSolution = () => {
     discriminant = b**2 - 4 * a * c
 
-    result = `A equação ${a}x² ${b >= 0 ? "+" : ""} ${b}x ${c >= 0 ? "+" : ""} ${c}`
+    result = `A equação ${a}x² ${b >= 0 ? "+ " + b : b.toString().replace("-", "- ")}x ${c >= 0 ? "+ " + c : c.toString().replace("-", "- ")}`
     
     if (discriminant > 0) {
         x1 = (-b + (discriminant**(1/2))) / (2 * a)
