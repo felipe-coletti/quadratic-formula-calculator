@@ -6,29 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Calculadora de equação de segundo grau</title>
         <link rel="stylesheet" href="css/style.css" />
-        <script src="js/script.js"></script>
+        <script src="js/script.js" defer></script>
     </head>
     <body>
         <main id="main">
             <div id="container">
                 <h1 id="primary-title">Calculadora de equação de segundo grau</h1>
-                <div id="content-area">
+                <form id="form">
                     <div id="input-area">
-                        <div id="input-field">
-                            <label id="label" for="a-input">a</label>
-                            <input id="a-input" class="input" type="number" />
-                        </div>
-                        <div id="input-field">
-                            <label id="label" for="b-input">b</label>
-                            <input id="b-input" class="input" type="number" />
-                        </div>
-                        <div id="input-field">
-                            <label id="label" for="c-input">c</label>
-                            <input id="c-input" class="input" type="number" />
-                        </div>
+                        <label class="label">
+                            a
+                            <input type="number" id="a-input" class="input" />
+                        </label>
+                        <label class="label">
+                            b
+                            <input type="number" id="b-input" class="input" />
+                        </label>
+                        <label class="label">
+                            c
+                            <input type="number" id="c-input" class="input" />
+                        </label>
                     </div>
-                    <button id="button" onclick="getSolution()">Calcular</button>
-                </div>
+                    <button type="submit" id="button">Calcular</button>
+                </form>
                 <div id="result-area">
                     <h2 id="secondary-title">Resultado</h2>
                     <p id="result"></p>

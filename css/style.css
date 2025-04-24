@@ -38,7 +38,7 @@
     font-size: 1.5rem;
 }
 
-#content-area {
+#form {
     gap: 1rem;
 }
 
@@ -47,19 +47,16 @@
     gap: 1rem;
 }
 
-#input-field {
+.label {
+    font-size: 1rem;
     gap: 0.5rem;
 }
 
 #container,
-#content-area,
-#input-field {
+#form,
+.label {
     display: flex;
     flex-direction: column;
-}
-
-#label {
-    font-size: 1rem;
 }
 
 .input {
