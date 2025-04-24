@@ -33,6 +33,7 @@ form.addEventListener('submit', (e) => {
         resultElement.innerHTML = findSolution(a, b, c)
         resultArea.style.display = 'flex'
     } else {
+        resultElement.innerHTML = ''
         resultArea.style.display = 'none'
     }
 })
