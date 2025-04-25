@@ -67,11 +67,6 @@
     width: 100%;
 }
 
-.checkbox-field {
-    display: flex;
-    gap: 0.5rem;
-}
-
 #button {
     background-color: var(--color-highlight);
     border: none;
