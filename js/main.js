@@ -1,6 +1,8 @@
 import { findSolution } from './solution.js'
 
 const form = document.getElementById('form')
+const resultArea = document.getElementById('result-area')
+const resultElement = document.getElementById('result')
 
 form.addEventListener('submit', e => {
 	e.preventDefault()
@@ -9,14 +11,11 @@ form.addEventListener('submit', e => {
 	const b = parseFloat(document.getElementById('b-input').value)
 	const c = parseFloat(document.getElementById('c-input').value)
 
-	const resultElement = document.getElementById('result')
-	const resultArea = document.getElementById('result-area')
-
 	if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
-		resultElement.innerHTML = findSolution(a, b, c)
-		resultArea.style.display = 'flex'
+		resultElement.textContent = findSolution(a, b, c)
+		resultArea.hidden = false
 	} else {
-		resultElement.innerHTML = ''
-		resultArea.style.display = 'none'
+		resultElement.textContent = ''
+		resultArea.hidden = true
 	}
 })
